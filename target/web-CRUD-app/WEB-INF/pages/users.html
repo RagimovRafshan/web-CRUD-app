@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Working with REST</title>
+</head>
+
+<body>
+<h1>All users</h1>
+<div th:each="user : ${users}">
+    <h2 th:text="${user.toString()}"></h2>
+</div>
+
+<a href="/users/create">Creating new user's</a>
+
+</body>
+</html>
