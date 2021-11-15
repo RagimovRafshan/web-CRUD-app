@@ -24,14 +24,13 @@ public class HomeController {
                                 @RequestParam("lastname") String lastname,
                                 @RequestParam("email") String email) {
         service.addUser(name, lastname, email);
-        System.out.println("App work!!!!");
-        return "create";
+        return "redirect:/users";
     }
 
     @GetMapping("/delete")
     public String create(@RequestParam("id") long id) {
         service.deleteUsersById(id);
-        return "delete";
+        return "redirect:/users";
     }
     
     @GetMapping("/update")
@@ -40,12 +39,6 @@ public class HomeController {
                          @RequestParam("lastname") String lastname,
                          @RequestParam("email") String email) {
         service.updateUser(id, name, lastname, email);
-        return "update";
-
+        return "redirect:/users";
     }
-
-
-
-
-
 }

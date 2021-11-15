@@ -14,8 +14,6 @@
     <h2 th:text="${user.toString()}"></h2>
 </div>
 
-
-
 </form>
 
 <br/>
@@ -41,7 +39,10 @@
     <input type="text" name="id" placeholder="needed id"/>
     <input type="submit" placeholder="Delete" title="delete"/>
 </form>
-
+<br/>
+<br/>
+<br/>
+<br/>
 </body>
 
 </html>
